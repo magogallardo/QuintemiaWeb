@@ -47,6 +47,19 @@ def index():
     return render_template('index.html') 
 
 
+@app.route('/info')
+def info():
+    return render_template('info.html')
+
+
+@app.route('/contacto')
+def contacto():
+    return render_template('contacto.html')
+
+@app.route('/media')
+def media():
+    return render_template('media.html')
+
 
 if __name__ == '__main__': 
     # Threaded option to enable multiple instances for multiple user access support

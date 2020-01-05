@@ -1,27 +1,17 @@
 {% extends "base-materialize.html" %}
 {% block content %}
 
-<div class="nav-fixed">
-  <nav class="nav">
-      <div class="nav-wrapper container">  
-        <img href="index" style="height: 65%;margin-top:10px;margin-right: 10px;" class="responsive-img" src="{{ url_for('static', filename='images/indexbg.jpg') }}">
-        <a href="index" class="brand-logo left">
-        BeePlanner
-        </a>
-        <ul class="right">
-          <li>
-            <a href="{{ url_for('media') }}" >
-              Home
-              <i class="material-icons left">home</i>
-            </a>
-      
-            <a href="{{ redirect_log }}">
-              {{ status_log }}
-            <i class="material-icons left">{{ icon_log }}</i>
-          </a>
-        </li>
-        </ul>
-     </div>
-  </nav>
+<nav class="orange accent-3">
+  <div class="nav-fixed">
+      <a href="/" class="brand-logo left">Quinteto Bohemia</a>
+      <ul class="right">
+
+        <li><a href="/contacto"><i class="material-icons left">home</i>Contacto</a></li>
+        <li><a href="/info">Información</a></li>
+        <li><a href="/media">Media</a></li>
+      </ul>
+  </div>
+</nav>
+
 
 {% endblock %}

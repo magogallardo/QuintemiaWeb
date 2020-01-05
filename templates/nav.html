@@ -1,12 +1,18 @@
-<div class="nav-fixed">
-  <div class="nav-wrapper container">
-  <nav class="orange accent-3">
-        <a href="/" class="brand-logo right">Quinteto Bohemia</a>
-        <ul id="nav-mobile" class="left hide-on-med-and-down">
-          <li><a href="/contacto"><i class="material-icons left">home</i></a></li>
-          <li><a href="/info">Información</a></li>
-          <li><a href="/media">Media</a></li>
-        </ul>
-    </nav>
+{% extends "base-materialize.html" %}
+{% block content %}
+
+  <div class="nav-fixed">
+    <div class="nav-wrapper">
+    <nav class="orange accent-3">
+          <a href="/" class="brand-logo right">Quinteto Bohemia</a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="/contacto"><i class="material-icons left">home</i></a></li>
+            <li><a href="/info">Información</a></li>
+            <li><a href="/media">Media</a></li>
+          </ul>
+      </nav>
+    </div>
   </div>
-</div>
+
+
+{% endblock %}

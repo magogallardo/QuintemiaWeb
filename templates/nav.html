@@ -1,19 +1,28 @@
-{% extends "base-materialize.html" %}
-{% block content %}
 
-<nav class="orange accent-3">
+
+<body>
+  
+
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="/Fotos">Fotos</a></li>
+  <li><a href="/Videos">Videos</a></li>
+</ul>
+
+
+<nav class="amber lighten-3">
   <div class="nav-fixed">
       
-      <img href="index" style="height: 10%;width: 10%;margin-top:-10px;margin-right: 10px;" class="responsive-img" src="{{ url_for('static', filename='images/logo.png') }}">
+      <img href="/" style="height: 10%;width: 10%;margin-top:-10px;margin-right: 10px;" class="responsive-img" src="{{ url_for('static', filename='images/logoBlack.png') }}">
 
       <ul class="right">
 
         <li><a href="/contacto"><i class="material-icons left">home</i>Contacto</a></li>
         <li><a href="/info">Información</a></li>
-        <li><a href="/media">Media</a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
   </div>
 </nav>
 
 
-{% endblock %}
+
+</body>

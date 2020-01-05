@@ -1,45 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Quintemia Página Oficial</title>
-  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+ <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
-</head>
+ </head>
 
-<header>
-  
-  {% include "nav.html" %}
-
-</header>
-
-<body>
-
-<div class="container">
+<body> 
 
   {% include "carousel.html" %}
 
-</div>
-
 <script>
 $(document).ready(function(){
- 
- $('.dropdown-trigger').dropdown();
- 
  $('#demo-carousel-auto').carousel();
   setInterval(function() {
     $('#demo-carousel-auto').carousel('next');
-  }, 3000);
-  
+  }, 1500);    
     
 });
 </script>
-</body> 
-
-
-</body>
-</html> 
+</body>   
+</html>

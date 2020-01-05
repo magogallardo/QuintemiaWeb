@@ -3,11 +3,22 @@
 <head>
   <title>Quintemia Página Oficial</title>
   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  <style type="text/css">
+      
+      /* resize images */
+      .container img {
+          width: 30%;
+          height: auto;
+      }
+
+  </style>
+
 
 </head>
 
@@ -20,6 +31,10 @@
 <body bgcolor="FFDC63">
 
 <div class="container section">
+  <div class="row" align="center">
+     <img class="responsive-img" src="{{ url_for('static', filename='images/logoBlack.png') }}">
+
+  </div>
   <div class="row">
     <div class="col s12">
       
@@ -29,18 +44,18 @@
     </div>
   </div>
 
-  <div class="row" align="center">
-     <img class="responsive-img" src="{{ url_for('static', filename='images/logoBlack.jpg') }}">
-
-  </div>
 
 </div>
 
 <script>
+
+
 $(document).ready(function(){
  
  $('.dropdown-trigger').dropdown();
  
+
+
  $('#demo-carousel-auto').carousel();
   setInterval(function() {
     $('#demo-carousel-auto').carousel('next');
@@ -49,6 +64,7 @@ $(document).ready(function(){
     
 });
 </script>
+
 </body> 
 
 

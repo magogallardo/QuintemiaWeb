@@ -52,9 +52,9 @@ def info():
     return render_template('info.html')
 
 
-@app.route('/contacto')
-def contacto():
-    return render_template('contacto.html')
+@app.route('/mediafotos')
+def fotos():
+    return render_template('fotos.html')
 
 @app.route('/media')
 def media():

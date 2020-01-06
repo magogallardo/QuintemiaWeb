@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+	<title>Quintemia - Fotos</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <script src="https://codepen.io/j_holtslander/pen/pLNzQb"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style-schedule.css') }}">
+</head>
+
+<header>
+	
+	<div>
+	{% include "nav.html" %}
+	</div>
+
+</header>
+
+<body bgcolor="FFDC63">
+
+
+	<div class="container" align="center">
+		
+		<div class="row" align="right">		 
+	 		<img class="materialboxed" width="680" src="{{ url_for('static', filename='images/foto1.jpg') }}">
+	 	</div>
+	 	<div class="row" align="center">	
+	 		<img class="materialboxed" width="650" src="{{ url_for('static', filename='images/foto2.jpg') }}">
+	 		<img class="materialboxed" width="650" src="{{ url_for('static', filename='images/foto3.jpg') }}">
+	 		<img class="materialboxed" width="650" src="{{ url_for('static', filename='images/foto4.jpg') }}">
+	 		<img class="materialboxed" width="650" src="{{ url_for('static', filename='images/foto5.jpg') }}">
+	 		<img class="materialboxed" width="650" src="{{ url_for('static', filename='images/foto6.jpg') }}">
+		</div>
+	
+
+
+	</div>
+
+
+
+
+
+</body>
+
+<footer>
+	
+	{% include "footer.html" %}
+
+</footer>
+
+
+
+<script type="text/javascript">
+		$(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+        
+
+
+</script>
+
+
+</html>

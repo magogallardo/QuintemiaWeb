@@ -1,13 +1,13 @@
 
 
-<body>
-  
-
-<ul id="dropdown1" class="dropdown-content">
-  <li><a href="/Fotos">Fotos</a></li>
-  <li><a href="/Videos">Videos</a></li>
+<ul id="dropdown" class="dropdown-content collection">
+    <li>
+        <a href="/mediafotos"><i class="material-icons">camera_alt</i>Fotos</a>
+    </li>
+    <li>
+        <a href="/mediavideos"><i class="material-icons">videocam</i>Videos</a>
+    </li>
 </ul>
-
 
 <nav class="black">
   <div class="nav-fixed">
@@ -15,17 +15,24 @@
       <img href="/" style="height: 10%;width: 10%;margin-top:-10px;margin-right: 10px;" class="responsive-img" src="{{ url_for('static', filename='images/logo.png') }}">
 
       <ul class="right">
-        <li><a href="https://www.facebook.com/Quintemia"><img href="/" style="height: 70%;width:70%;margin-top:10px;margin-right: 10px;" class="responsive-img" src="{{ url_for('static', filename='images/fblogowhitetrue.png') }}"></li></a>
+        <li><a href="/">Home<i class="material-icons left">home</i></li></a>
 
-        <li><a href="https://www.instagram.com/quintemia_"><img href="/" style="height: 70%;width: 70%;margin-top:10px;margin-right: 10px;" class="responsive-img" src="{{ url_for('static', filename='images/iglogotrue.png') }}"></li></a>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown" data-beloworigin="true">Media<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+
+        <li><a href="https://www.facebook.com/Quintemia"><img href="/" style="height: 60%;width:60%;margin-top:10px;margin-right: 10px;" class="responsive-img" src="{{ url_for('static', filename='images/fblogowhitetrue.png') }}"></li></a>
+
+        <li><a href="https://www.instagram.com/quintemia_"><img href="/" style="height: 60%;width: 60%;margin-top:10px;margin-right: 10px;" class="responsive-img" src="{{ url_for('static', filename='images/iglogotrue.png') }}"></li></a>
       </ul>
   </div>
 </nav>
 
 <script>
 
+ $(document).ready(function(){
+$(".dropdown-trigger").dropdown();
+});
 
 </script>
 
 
-</body>
+

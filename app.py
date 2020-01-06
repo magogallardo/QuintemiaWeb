@@ -56,9 +56,9 @@ def info():
 def fotos():
     return render_template('fotos.html')
 
-@app.route('/media')
+@app.route('/contacto')
 def media():
-    return render_template('media.html')
+    return render_template('info.html')
 
 
 if __name__ == '__main__': 

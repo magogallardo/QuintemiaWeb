@@ -17,6 +17,10 @@
           height: auto;
       }
 
+      .footer {
+        color: black;
+      }
+
   </style>
 
 
@@ -45,23 +49,41 @@
 
     </div> 
   </div>
-  <div class="row">
+  <div class="row" align="center">
+      <H2>Reciente:</H2>
+      <div class="col z-depth-2 card-panel small about-cards">
+        <div class="card small">
+          <div class="card-image">
+            <img src="{{ url_for('static', filename='images/otravezcover.jpg') }}">
+            <span class="card-title">Otra Vez. Absurdamente...</span>
+          </div>
+          <div class="card-content">
+            <p>Nuestro segundo sencillo. Porque hay ocasiones en que no podemos recordar ciertas cosas</p>
+          </div>
+          <div class="card-action">
+            <a href="https://www.youtube.com/watch?v=k_E3sj4ydrk">¡Escúchalo ahora!</a>
+          </div>
+        </div>  
   
-    <div class="col s12">
-      <div class="card small">
-        <div class="card-image">
-          <img src="{{ url_for('static', filename='images/otravezcover.jpg') }}">
-          <span class="card-title">Otra Vez. Absurdamente...</span>
         </div>
-        <div class="card-content">
-          <p>Nuestro segundo sencillo. Porque hay ocasiones en que no podemos recordar ciertas cosas</p>
+        <div class="col z-depth-2 card-panel small about-cards">
+          
+        <div class="card small">
+            <div class="card-image">
+              <img src="{{ url_for('static', filename='images/otravezcover.jpg') }}">
+              <span class="card-title">Otra Vez. Absurdamente2</span>
+            </div>
+            <div class="card-content">
+              <p>Otra nota para probar</p>
+            </div>
+            <div class="card-action">
+              <a href="https://www.youtube.com/watch?v=k_E3sj4ydrk">¡Escúchalo ahora!</a>
+            </div>
+          </div>  
+  
         </div>
-        <div class="card-action">
-          <a href="https://www.youtube.com/watch?v=k_E3sj4ydrk">¡Escúchalo ahora!</a>
-        </div>
-      </div>  
+  </div>
 
-    </div>
   
   </div>
 
@@ -88,6 +110,12 @@ $(document).ready(function(){
 
 </body> 
 
+<footer>
+  
+
+{% include "footer.html" %}
+
+</footer>
 
 </body>
 </html> 
